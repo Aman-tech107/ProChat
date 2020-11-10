@@ -1,0 +1,120 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(77, 195, 216);
+}
+
+.ChatHeading {
+    padding: 0;
+    margin: 0;
+    font-size: 45px;
+    text-shadow: 2px 1px 5px;
+    text-align: center;
+    color: tomato;
+    background-color: rgb(255, 255, 0);
+
+}
+#messages {
+    border-radius: 25px;
+    text-align: right;
+    width: auto;
+}
+
+#box {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 2%;
+}
+@media (max-width: 520px){
+    #input {
+        margin: 5px;
+        width: 75%;
+        border-radius: 5px;
+        padding: 1.25%;
+        background-color: black;
+        color: white;
+    }
+    #send {
+        background-color:black;
+        border-radius: 15% 0 15% 15%;
+        width: 70px;
+        padding: 1.25%;
+        color: white;
+    }
+    #send:hover {
+        transform: scale(0.75);
+        border-radius: 25%;
+    }
+}
+
+@media (min-width: 520px){
+    #input {
+        margin: 5px;
+        width: 85%;
+        border-radius: 5px;
+        padding: 0.75%;
+        background-color: black;
+        color: white;
+    }
+    #send {
+        background-color:black;
+        border-radius: 15% 0 15% 15%;
+        width: 100px;
+        padding: 0.75%;
+        color: white;
+    }
+    #send:hover {
+        transform: scale(0.75);
+        border-radius: 25%;
+    }
+}
+
+.msg {
+    background-color: rgb(36, 185, 190);
+    padding: 10px;
+    font-size: 20px;
+}
+
+#chat {
+    display: none;
+}
+
+#nameSet {
+    padding: 1.25%;
+}
+
+#passwordSet {
+    padding: 1.25%;
+}
+
+#usernameString {
+    color: white;
+    font-size: 20px;
+}
+
+#passwordString {
+    color: white;
+    font-size: 20px;
+}
+#login {
+    text-align: center;
+    padding-top: 35%;
+    width: 100%;
+}
+
+.login-design {
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: black;
+    border-radius: 15%;
+}
+
+#loginbutton {
+    padding: 1.5%;
+    color: #34348d;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: rgb(91, 211, 61);
+}

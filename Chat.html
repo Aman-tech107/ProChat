@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProChat</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+          apiKey: "AIzaSyAxtYyylrPDFOVq5HvLJGFdqUip_66SCBo",
+          authDomain: "prochat-11713.firebaseapp.com",
+          databaseURL: "https://prochat-11713.firebaseio.com",
+          projectId: "prochat-11713",
+          storageBucket: "prochat-11713.appspot.com",
+          messagingSenderId: "916589698996",
+          appId: "1:916589698996:web:0be34cf3f43aadc4595ce1",
+          measurementId: "G-WCW7NMDP6R"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+      </script>
+</head>
+<body>
+    <div id="login">
+        <div class="login-design">
+            <div id="nameSet">
+                <p id="usernameString">Username</p>
+                <input type="text" id="name" />
+            </div>
+            
+            <div id="passwordSet">
+                <p id="passwordString">Password</p>
+                <input type="text" id="password" />
+            </div>
+            <button id="loginbutton" onclick="information()">Log In</button>
+        </div>
+    </div>
+        <div id="chat">
+        <p class="ChatHeading">ProChat</p>
+        <div id="messages">
+
+        </div>
+        <div id="box">
+            <input type="text" id="input" placeholder="Type a Message"/>
+            <button id="send" onclick="send()">Send</button>
+        </div>
+    </div>
+    <script src="login.js"></script>
+    <script src="sketch.js"></script>
+</body>
+</html>
