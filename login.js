@@ -107,7 +107,7 @@ function addId(){
     })
 }
 
-setInterval(value, 1000);
+setInterval(value, 5);
 function value(){
     getMsg();
     console.log(msg.length);
