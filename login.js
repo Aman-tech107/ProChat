@@ -125,6 +125,14 @@ function value(){
     
 }
 
+var Input = document.getElementById("input");
+
+Input.addEventListener("keydown", function(event) {
+    if(event.keyCode === 13){
+        send();
+    }
+})
+
 function send(){
 
     if(document.getElementById("input").value !== ""){
