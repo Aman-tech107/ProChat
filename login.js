@@ -119,9 +119,10 @@ function value(){
         msgContaner.className = "msg";
         msgContaner.innerText = PreMessages[PreMessages.length - 1]["Msg"];
         messages.appendChild(msgContaner);
+        window.scrollTo(0, document.body.clientHeight);
     }
     index = PreMessages.length - 1;
-    window.scrollTo(0, document.body.clientHeight);
+    
 }
 
 function send(){

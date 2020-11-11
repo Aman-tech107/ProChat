@@ -75,9 +75,10 @@ body {
 }
 
 .msg {
-    background-color: rgb(36, 185, 190);
+    background-color: rgb(0, 0, 0);
     padding: 10px;
     font-size: 20px;
+    color: white;
 }
 
 #chat {
